@@ -1,8 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    --main-text-color: #F7F7F7; 
-    --secondary-text-color: #A4A4A4;
+    --main-text-color: #E6E2AF; 
+    --secondary-text-color: #A7A37E;
+    --third-text-color: #EFECCA;
+    --fourth-text-color: #046380;
+    --fifth-text-color: #002F2F;
+
+    /* --main-text-color:#2C3E50;
+    --secondary-text-color:#E74C3C;
+    --third-text-color:#ECF0F1;
+    --fourth-text-color:#3498DB;
+    --fifth-text-color:#2980B9; */
+
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
@@ -41,6 +55,30 @@ body {
     background-color: #A4A4A4;
 }
 
+.title {
+	position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: #002F2F;
+    font-family: 'Bellefair', serif;
+    z-index: 1;
+}
+
+.title-cite {
+    position: absolute;
+    left: 0;
+    top: 43%;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: "Raleway";
+
+}
+
 .header {
 	width: 100%;
 }
@@ -51,7 +89,10 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url(../possible_images/black-and-white-city-man-people.jpg);
+	/* background-image: url(../possible_images/black-and-white-city-man-people.jpg); */
+	/* background-image: url(../possible_images/black-and-white-interior-macbook-drawing-71983.jpeg); */
+	/* background-image: url(../possible_images/pexels-photo-265152.jpeg); */
+	background-image: url(../possible_images/pexels-photo-273238.jpeg);
 }
 
 
