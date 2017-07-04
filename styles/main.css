@@ -17,6 +17,7 @@ body {
 
 body {
 	font-family: 'Raleway', sans-serif;
+    color: #002F2F;
 }
 
 .navbar {
@@ -91,7 +92,7 @@ body {
 }
 
 .header {
-	width: 100%;
+	/* width: 100%; */
 }
 
 .header .title-img {
@@ -105,8 +106,100 @@ body {
 }
 
 .section {
-    height: 100px;
-    background-color: red;
+    /* height: 100px; */
+    background-color: #E6E2AF;
+    padding: 1em;
 }
 
+.section > header > h2 {
+    color: #046380;
+    font-family: 'Bellefair', serif;
+    text-align: center;
+    font-size: 28px;
+    /* background-color: rgba(239,236,202,0.6); */
+    /* padding: 20px;
+    border-radius: 1.5em;
+    box-shadow: 10px 10px 5px #888888;
+    display: inline-block;
+    margin: auto; */
+}
 
+.summary-section > .section-content {
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.summary-section > .section-content p {
+    width: 80%;
+    display: inline-block;
+    text-align: justify;
+}
+
+.summary-item1 {
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-item2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+.summary-item3 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-item4 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+.summary-item5 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-item6 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+.summary-item7 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-item8 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+.summary-item9 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-item10 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
