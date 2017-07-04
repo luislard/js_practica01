@@ -56,21 +56,32 @@ body {
 }
 
 .title {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     color: #002F2F;
     font-family: 'Bellefair', serif;
     z-index: 1;
-    margin-top: 120px;
+    margin-top: 200px;
+    /* background-color: #EFECCA; */
+    background-color: rgba(239,236,202,0.5);
+    padding: 20px;
+    /* border-radius: 1.1em 2em 1.1em 2em; */
+    border-radius: 1.5em 1.1em;
 }
 
 .title-cite {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     font-size: 28px;
-    color: white;
+    color: #046380;
     font-family: "Raleway";
+    font-weight: bold;
+    /* background-color: #E6E2AF; */
+    background-color: rgba(239,236,202,0.5);
+    padding: 20px;
+    /* border-radius: 1.1em 1.5em 1.1em 1.5em; */
+    border-radius: 1.5em;
 
 }
 

@@ -3,14 +3,14 @@
 
 .row-flex {
     display: flex;
-    flex-flow: row wrap;
-}
-
-.title-flex-item {
-    display: flex;
+    /* flex-flow: row wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.title-flex-item {
+    /* display: flex; */
     /* flex: 1; */
 }
 
