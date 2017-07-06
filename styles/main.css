@@ -136,70 +136,100 @@ body {
 .summary-section > .section-content p {
     width: 80%;
     display: inline-block;
-    text-align: justify;
+    text-align: center;
 }
 
-.summary-item1 {
+.summary-items > .item1 {
     font-weight: bold;
     font-size: 2em;
     text-shadow: 2px 2px #888888;
 }
 
-.summary-item2 {
+.summary-items > .item2 {
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #888888;
     color: #046380;
 }
 
-.summary-item3 {
+.summary-items > .item3 {
     font-weight: bold;
     font-size: 1.8em;
     text-shadow: 2px 2px #888888;
 }
 
-.summary-item4 {
+.summary-items > .item4 {
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #888888;
     color: #046380;
 }
 
-.summary-item5 {
+.summary-items > .item5 {
     font-weight: bold;
     font-size: 1.8em;
     text-shadow: 2px 2px #888888;
 }
 
-.summary-item6 {
+.summary-items > .item6 {
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #888888;
     color: #046380;
 }
 
-.summary-item7 {
+.summary-items > .item7 {
     font-weight: bold;
     font-size: 1.8em;
     text-shadow: 2px 2px #888888;
 }
 
-.summary-item8 {
+.summary-items > .item8 {
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #888888;
     color: #046380;
 }
 
-.summary-item9 {
+.summary-items > .item9 {
     font-weight: bold;
     font-size: 1.8em;
     text-shadow: 2px 2px #888888;
 }
 
-.summary-item10 {
+.summary-items > .item10 {
     font-weight: bold;
     font-size: 1.4em;
     text-shadow: 1px 1px #888888;
     color: #046380;
 }
+
+.summary-items > .item11 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-items > .item12 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+.summary-items > .item13 {
+    font-weight: bold;
+    font-size: 1.8em;
+    text-shadow: 2px 2px #888888;
+}
+
+.summary-items > .item14 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 1px 1px #888888;
+    color: #046380;
+}
+
+
+
+
