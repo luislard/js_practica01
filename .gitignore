@@ -1,0 +1,4 @@
+# ignore image folder
+/possible_images
+# ignore jetbrains folder
+/.idea
