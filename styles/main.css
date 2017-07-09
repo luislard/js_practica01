@@ -95,7 +95,7 @@ body {
     text-align: center;
      font-size: 3.9em; 
     color: #FFFFFF;
-    font-weight: 100;
+    font-weight: 300;
     text-shadow: 2px 2px #A6A5A5;
 }
 
@@ -104,7 +104,6 @@ body {
     text-align: center;
     font-size: 1em;
     color: #000000;
-    font-weight: bold;
     text-align: justify;
 }
 
@@ -135,6 +134,13 @@ body {
     font-size: 469px;
     margin-right: -36px;
     margin-top: 50px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
+.section > .section-content > .section-header h2 {
+    font-weight: 200;
+    display: inline-block;
+    border-bottom: solid 5px #F2F2F2;
+    padding:15px;
+    
+}
