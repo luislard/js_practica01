@@ -58,9 +58,11 @@ body {
 }
 
 .navbar > .navbar-left > .navbar-home a {
-    padding: 20px 20px 20px 0;
+    padding: 11px 20px 11px 0;
     text-decoration: none;
     display: inline-block;
+    font-size: 31px;
+
 }
 
 .navbar > .navbar-right > .navbar-list > .navbar-item {
