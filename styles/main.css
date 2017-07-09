@@ -27,31 +27,60 @@ body {
     top: 0;
 }
 
-.navbar > .navbar-list {
+.navbar > .navbar-left {
+    float: left;
+    margin-left: 7.142857143%;
+}
+.navbar > .navbar-right {
+    float: right;
+    margin-right: 7.142857143%;
+}
+
+.navbar > .navbar-right > .navbar-list {
     list-style-type: none;
     margin: 0;
     float: right;
     font-size: 0;
+    padding-left: 0;
+}
+.navbar > .navbar-left > .navbar-home {
+    list-style-type: none;
+    margin: 0;
+    float: left;
+    font-size: 0;
+    margin-left: 7.142857143%;
+    display: inline-block;
 }
 
-.navbar > .navbar-list > .navbar-item {
+.navbar > .navbar-left > .navbar-home > .navbar-item {
     display: inline-block;
     font-size: 16px;
 }
 
-.navbar > .navbar-list > .navbar-item a {
+.navbar > .navbar-left > .navbar-home a {
+    padding: 20px 20px 20px 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar > .navbar-right > .navbar-list > .navbar-item {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.navbar > .navbar-right > .navbar-list > .navbar-item a {
     padding: 20px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.9);
     display: inline-block;
 }
 
-.navbar > .navbar-list > .navbar-item.active a {
+.navbar > .navbar-right > .navbar-list > .navbar-item .active a {
     color: #F7F7F7;
     background-color: #A4A4A4;
 }
 
-.navbar > .navbar-list > .navbar-item a:hover {
+.navbar > .navbar-right > .navbar-list > .navbar-item a:hover {
     color: #F7F7F7;
     background-color: #A4A4A4;
 }
