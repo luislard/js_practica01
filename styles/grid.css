@@ -1,39 +1,118 @@
 /* grid */
 .col-1{
-	width: calc((100%/12)*1);
+	width: 7.142857143%;
+    display: inline-block;
+    float: /*left*/;
 }
 .col-2{
-	width: calc((100%/12)*2);
+	width: 14.28571429%;
+	display: inline-block;
+	float: left;
 }
 .col-3{
-	width: calc((100%/12)*3);
+	width: 21.42857143%;
+	display: inline-block;
+	float: left;
+
 }
 .col-4{
-	width: calc((100%/12)*4);
+	width: 28.57142857%;
+	display: inline-block;
+	float: left;
 }
 .col-5{
-	width: calc((100%/12)*5);
+	width: 35.71428571%;
+	display: inline-block;
+	float: left;
 }
 .col-6{
-	width: calc((100%/12)*6);
+	width: 42.85714286%;
+	display: inline-block;
+	float: left;
 }
 .col-7{
-	width: calc((100%/12)*7);
+	width: 50%;
+	display: inline-block;
+	float: left;
 }
 .col-8{
-	width: calc((100%/12)*8);
+	width: 57.14285714%;
+	display: inline-block;
+	float: left;
 }
 .col-9{
-	width: calc((100%/12)*9);
+	width: 64.28571429%;
+	display: inline-block;
+	float: left;
 }
 .col-10{
-	width: calc((100%/12)*10);
+	width: 71.42857143%;
+	display: inline-block;
+	float: left;
 }
 .col-11{
-	width: calc((100%/12)*11);
+	width: 78.57142857%;
+	display: inline-block;
+	float: left;
 }
 .col-12{
-	width: calc((100%/12)*12);
+	width: 85.71428571%;
+	display: inline-block;
+	float: left;
+}
+.col-13{
+	width: 92.85714286%;
+	display: inline-block;
+	float: left;
+}
+.col-14{
+	width: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.offset-col-1{
+	margin-left: 7.142857143%;
+}
+.offset-col-2{
+	margin-left: 14.28571429%;
+}
+.offset-col-3{
+	margin-left: 21.42857143%;
+
+}
+.offset-col-4{
+	margin-left: 28.57142857%;
+}
+.offset-col-5{
+	margin-left: 35.71428571%;
+}
+.offset-col-6{
+	margin-left: 42.85714286%;
+}
+.offset-col-7{
+	margin-left: 50%;
+}
+.offset-col-8{
+	margin-left: 57.14285714%;
+}
+.offset-col-9{
+	margin-left: 64.28571429%;
+}
+.offset-col-10{
+	margin-left: 71.42857143%;
+}
+.offset-col-11{
+	margin-left: 78.57142857%;
+}
+.offset-col-12{
+	margin-left: 85.71428571%;
+}
+.offset-col-13{
+	margin-left: 92.85714286%;
+}
+.offset-col-14{
+	margin-left: 100%;
 }
 
 
