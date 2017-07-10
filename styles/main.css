@@ -25,6 +25,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 .navbar > .navbar-left {
@@ -112,7 +113,7 @@ body {
 }
 
 .section {
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 
@@ -140,9 +141,10 @@ body {
 }
 
 .section > .chapter > .chapter-number {
+    width: 600px;
     position: absolute;
     top: 50px;
-    right: -36px;
+    right: -145px;
     z-index: -1;
     color: #DDDDDD;
     font-size: 469px;
@@ -157,7 +159,7 @@ body {
     display: inline-block;
     border-bottom: solid 5px #F2F2F2;
     padding:15px 15px 15px 0;
-    margin-bottom: 5px;
+    margin-bottom: 5px2;
     
 }
 
@@ -173,4 +175,96 @@ body {
     font-size: 20px;
     font-weight: 200;
 }
+
+.skills-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 101px;
+}
+
+@keyframes logo-up {
+    from {
+        margin-bottom: 0;
+        transform: scale(1,1);
+    }
+    to {
+        margin-bottom: 40px;
+        transform: scale(1.2,1.2);
+    }
+}
+
+.skills-carousel > .img-container {
+    width: 50px;
+    padding:0 5px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 101px;
+}
+
+.skills-carousel > .img-container > img {
+    width: 100%;
+}
+
+.skills-carousel > .img-container:hover {
+    margin-bottom: 40px;
+    transform: scale(1.2,1.2);
+    animation-name: logo-up;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.experience-item {
+    width: 400px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.experience-item > .experience-item-container {
+    float: right;
+    width: 320px;
+}
+
+.experience-item > .experience-item-container > header > h4 {
+    font-weight:700;
+    display: inline-block;
+    margin-top: 5px;
+
+}
+
+.experience-item > .experience-item-container > .experience-item-footer {
+    float: right;
+}
+
+.git-container > .experience-item > .commit-img {
+    background-color: #5BC0DE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.experience-item.collapsed > .experience-item-container > p {
+    display: none;
+}
+
+.experience-item.collapsed > .experience-item-container > header {
+    float: left;
+}
+
+.experience-item.collapsed > .experience-item-container > footer {
+    margin-top: 5px;
+}
+
+
+
+
 
