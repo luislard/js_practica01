@@ -217,14 +217,15 @@ body {
 }
 
 .experience-item {
-    width: 400px;
+    width: 33.3333333%;
     text-align: justify;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .experience-item > .experience-item-container {
     float: right;
-    width: 320px;
+    width: 250px;
 }
 
 .experience-item > .experience-item-container > header > h4 {
@@ -263,6 +264,56 @@ body {
 .experience-item.collapsed > .experience-item-container > footer {
     margin-top: 5px;
 }
+
+.section > .section-content > .education-wrapper {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding:0;
+}
+
+.section > .section-content > .education-wrapper > .education-item {
+        width: 100%;
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed {
+
+    width: 30%;
+
+}
+
+.section > .section-content > .education-wrapper > .education-item > .education-subitems {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section > .section-content > .education-wrapper > .education-item > .education-subitems > .education-desc {
+    padding-bottom: 15px;
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed > .education-subitems > .education-desc {
+    display: none;
+}
+
+/* The animation code */
+@keyframes education-item-header {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed > .education-header-item {
+    transform-origin: bottom left;
+    animation-name: education-item-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
 
 
 
