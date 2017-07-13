@@ -333,6 +333,44 @@ body {
     animation-fill-mode: forwards;
 }
 
+.about-me > .section-content > .personal-img-container {
+    width: 20%;
+    min-height:200px;
+    background-image: url(../images/LUIS.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    float: left;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5%;
+    border: solid 5px #F2F2F2;
+}
+
+.about-me > .section-content > .about-me-content {
+    width: 70%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border-left: solid 5px #F2F2F2;*/
+    float: left;
+    display: inline-block;
+    padding: 3%;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text {
+    text-align: center;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text > .item:nth-child(odd) {
+    font-size: 1.5em;
+    font-weight:500;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text > .item:nth-child(even) {
+    /*font-size: 12px;*/
+    font-weight:300;
+}
 
 
 
