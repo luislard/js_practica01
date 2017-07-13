@@ -144,7 +144,7 @@ body {
     width: 600px;
     position: absolute;
     top: 50px;
-    right: -145px;
+    right: -125px;
     z-index: -1;
     color: #DDDDDD;
     font-size: 469px;
@@ -178,6 +178,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.no-visibility{
+    visibility: hidden;
 }
 
 .skills-carousel {
@@ -375,6 +379,39 @@ body {
     /*font-size: 12px;*/
     font-weight:300;
 }
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group {
+    padding: 5px 0;
+}
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group > .label {
+    display: block;
+    padding: 5px 0;
+}
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group > .error {
+    display: block;
+    color: #bf0606;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    height: 31px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+textarea {
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    /*height: 31px;*/
+    font-size: 20px;
+    padding-left: 10px;
+}
+
 
 
 

@@ -51,23 +51,26 @@
 				
 				
 				<li class="navbar-item">
-					<a href="">About Me - Summary</a>
+					<a href="">About Me</a>
 				</li>
-				
+
 				<li class="navbar-item">
-					<a href="">Education Highlights</a>
+					<a href="">Skills</a>
 				</li>
-				
+
 				<li class="navbar-item">
 					<a href="">Experience</a>
 				</li>
-				
+
+				<!--<li class="navbar-item">-->
+					<!--<a href="">About Me - Professional Skills</a>-->
+				<!--</li>-->
+
+				<!--<li class="navbar-item">-->
+					<!--<a href="">Why me?</a>-->
+				<!--</li>-->
 				<li class="navbar-item">
-					<a href="">About Me - Professional Skills</a>
-				</li>
-				
-				<li class="navbar-item">
-					<a href="">Why me?</a>
+					<a href="">Education</a>
 				</li>
 
 				<li class="navbar-item">
@@ -130,9 +133,11 @@
 				<header class="section-header">
 					<h2>Skills</h2>
 				</header>
-				<h3>Subtitle</h3>
+				<h3 class="">Pick One Skill!</h3>
 				<p class="skill-desc">
-
+					During my trip inside Solutions 30 I have been asked to use vagrant to set up my development environment, currently in a Windows host.
+					I was able to write some shell scripts to run automatize some provisioning into the Virtual Machines.
+					My boss idea was to complement the vagrant provisioning using Chef. I am still working on it.
 				</p>
 				<div class="vagrant hidden">
 					During my trip inside Solutions 30 I have been asked to use vagrant to set up my development environment, currently in a Windows host.
@@ -208,7 +213,7 @@
  				</div>
 			</div>
 			<div class="chapter">
-				<span class="chapter-number">01</span>
+				<span class="chapter-number">02</span>
 			</div>
 		</section>
 		<section class="section experience">
@@ -338,7 +343,7 @@
 				</ul>
 			</div>
 			<div class="chapter">
-				<span class="chapter-number">02</span>
+				<span class="chapter-number">03</span>
 			</div>
 		</section>
 		<section class="section education">
@@ -398,7 +403,62 @@
 					</ul>
 			</div>
 			<div class="chapter">
-				<span class="chapter-number">03</span>
+				<span class="chapter-number">04</span>
+			</div>
+		</section>
+		<section class="section contact">
+
+			<div class="section-content col-12 offset-col-1">
+				<header class="section-header">
+					<h2>Contact</h2>
+				</header>
+				<div class="contact-form-container">
+					<form action="" method="" class="contact-form">
+						<div class="form-group">
+							<label for="name" class="label">Name</label>
+							<input type="text" placeholder="e.g. Luis Rosales" name="name" id="name" class="input-text">
+							<span class="error" id="name-error">This field should not be blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="email" class="label">Email</label>
+							<input type="email" placeholder="e.g. example@mail.com" name="email" id="email" class="input-email">
+							<span class="error" id="email-error">This field should not be blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="phone" class="label">Phone</label>
+							<input type="text" placeholder="e.g. 605123456" name="phone" id="phone" class="input-phone">
+							<span class="error" id="phone-error">This field should not be blank.</span>
+						</div>
+						<div class="form-group">
+							<div class="form-group-title">
+								How do you find me?
+							</div>
+							<div class="form-radios">
+								<label for="rKeepcoding" class="label">Keepcoding</label>
+								<input type="radio"  name="how" id="rKeepcoding" class="input-how" value="Keepcoding">
+								<label for="rYoutube" class="radio-label">Youtube</label>
+								<input type="radio"  name="how" id="rYoutube" class="input-how" value="Youtube">
+								<label for="rGithub" class="radio-label">Github</label>
+								<input type="radio"  name="how" id="rGithub" class="input-how" value="Github">
+								<label for="rOther" class="radio-label">Other</label>
+								<input type="radio"  name="how" id="rOther" class="input-how" value="Other">
+							</div>
+							<span class="error" id="how-error">This field should not be blank.</span>
+						</div>
+						<div class="form-group">
+							<div class="form-group-title">
+								Write a message.
+							</div>
+							<textarea name="message" id="message" cols="30" rows="5" class="form-textarea"></textarea>
+							<span class="error" id="message-error">This field should not be blank.</span>
+						</div>
+						<input type="submit" value="Send" id="send">
+					</form>
+				</div>
+			</div>
+
+			<div class="chapter">
+				<span class="chapter-number">05</span>
 			</div>
 		</section>
 		
