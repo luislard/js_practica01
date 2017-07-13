@@ -176,6 +176,10 @@ body {
     font-weight: 200;
 }
 
+.hidden {
+    display: none;
+}
+
 .skills-carousel {
     display: flex;
     flex-direction: row;
