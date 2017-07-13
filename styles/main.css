@@ -216,8 +216,13 @@ body {
     animation-timing-function: ease-in-out;
 }
 
+.git-container {
+    list-style-type: none;
+    padding:0;
+}
+
 .experience-item {
-    width: 33.3333333%;
+    width: 100%;
     text-align: justify;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -225,7 +230,8 @@ body {
 
 .experience-item > .experience-item-container {
     float: right;
-    width: 250px;
+    width: 80%;
+    margin-right: 7.142857143%;
 }
 
 .experience-item > .experience-item-container > header > h4 {
@@ -233,6 +239,18 @@ body {
     display: inline-block;
     margin-top: 5px;
 
+}
+.experience-item > .experience-item-container .job-position,
+.experience-item > .experience-item-container .company-name {
+    margin: 5px 0;
+}
+
+.experience-item > .experience-item-container > .experience-item-footer {
+    font-weight: 300;
+}
+.experience-item > .experience-item-container .company-name {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .experience-item > .experience-item-container > .experience-item-footer {
@@ -253,8 +271,13 @@ body {
     display: table;
 }
 
-.experience-item.collapsed > .experience-item-container > p {
+.experience-item.collapsed > .experience-item-container > .experience-item-text {
     display: none;
+    list-style-type: none;
+    padding: 0;
+}
+.experience-item > .experience-item-container > .experience-item-text > .job-bullet-item {
+    font-weight: 300;
 }
 
 .experience-item.collapsed > .experience-item-container > header {
