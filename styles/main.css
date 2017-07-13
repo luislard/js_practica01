@@ -144,7 +144,7 @@ body {
     width: 600px;
     position: absolute;
     top: 50px;
-    right: -145px;
+    right: -125px;
     z-index: -1;
     color: #DDDDDD;
     font-size: 469px;
@@ -174,6 +174,14 @@ body {
     text-align: justify;
     font-size: 20px;
     font-weight: 200;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-visibility{
+    visibility: hidden;
 }
 
 .skills-carousel {
@@ -216,15 +224,22 @@ body {
     animation-timing-function: ease-in-out;
 }
 
+.git-container {
+    list-style-type: none;
+    padding:0;
+}
+
 .experience-item {
-    width: 400px;
+    width: 100%;
     text-align: justify;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .experience-item > .experience-item-container {
     float: right;
-    width: 320px;
+    width: 80%;
+    margin-right: 7.142857143%;
 }
 
 .experience-item > .experience-item-container > header > h4 {
@@ -232,6 +247,18 @@ body {
     display: inline-block;
     margin-top: 5px;
 
+}
+.experience-item > .experience-item-container .job-position,
+.experience-item > .experience-item-container .company-name {
+    margin: 5px 0;
+}
+
+.experience-item > .experience-item-container > .experience-item-footer {
+    font-weight: 300;
+}
+.experience-item > .experience-item-container .company-name {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .experience-item > .experience-item-container > .experience-item-footer {
@@ -252,8 +279,13 @@ body {
     display: table;
 }
 
-.experience-item.collapsed > .experience-item-container > p {
+.experience-item.collapsed > .experience-item-container > .experience-item-text {
     display: none;
+    list-style-type: none;
+    padding: 0;
+}
+.experience-item > .experience-item-container > .experience-item-text > .job-bullet-item {
+    font-weight: 300;
 }
 
 .experience-item.collapsed > .experience-item-container > header {
@@ -263,6 +295,127 @@ body {
 .experience-item.collapsed > .experience-item-container > footer {
     margin-top: 5px;
 }
+
+.section > .section-content > .education-wrapper {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding:0;
+}
+
+.section > .section-content > .education-wrapper > .education-item {
+        width: 100%;
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed {
+
+    width: 30%;
+
+}
+
+.section > .section-content > .education-wrapper > .education-item > .education-subitems {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section > .section-content > .education-wrapper > .education-item > .education-subitems > .education-desc {
+    padding-bottom: 15px;
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed > .education-subitems > .education-desc {
+    display: none;
+}
+
+/* The animation code */
+@keyframes education-item-header {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+.section > .section-content > .education-wrapper > .education-item.collapsed > .education-header-item {
+    transform-origin: bottom left;
+    animation-name: education-item-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.about-me > .section-content > .personal-img-container {
+    width: 20%;
+    min-height:200px;
+    background-image: url(../images/LUIS.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    float: left;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5%;
+    border: solid 5px #F2F2F2;
+}
+
+.about-me > .section-content > .about-me-content {
+    width: 70%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border-left: solid 5px #F2F2F2;*/
+    float: left;
+    display: inline-block;
+    padding: 3%;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text {
+    text-align: center;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text > .item:nth-child(odd) {
+    font-size: 1.5em;
+    font-weight:500;
+}
+
+.about-me > .section-content > .about-me-content > .about-me-text > .item:nth-child(even) {
+    /*font-size: 12px;*/
+    font-weight:300;
+}
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group {
+    padding: 5px 0;
+}
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group > .label {
+    display: block;
+    padding: 5px 0;
+}
+
+.contact > .section-content > .contact-form-container > .contact-form > .form-group > .error {
+    display: block;
+    color: #bf0606;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    height: 31px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+textarea {
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    /*height: 31px;*/
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+
+
+
 
 
 
