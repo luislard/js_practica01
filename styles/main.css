@@ -380,16 +380,16 @@ body {
     font-weight:300;
 }
 
-.contact > .section-content > .contact-form-container > .contact-form > .form-group {
+.contact > .section-content > .contact-form-container > .contact-form  .form-group {
     padding: 5px 0;
 }
 
-.contact > .section-content > .contact-form-container > .contact-form > .form-group > .label {
+.contact > .section-content > .contact-form-container > .contact-form  .form-group > .label {
     display: block;
     padding: 5px 0;
 }
 
-.contact > .section-content > .contact-form-container > .contact-form > .form-group > .error {
+.contact > .section-content > .contact-form-container > .contact-form  .form-group > .error {
     display: block;
     color: #bf0606;
     font-size: 14px;
@@ -402,14 +402,18 @@ input[type="text"], input[type="email"] {
     height: 31px;
     font-size: 20px;
     padding-left: 10px;
+    font-family:Raleway,SansSerif;
+    width: 80%;
 }
 
 textarea {
     border-radius: 8px;
     border: 1px solid #dddddd;
-    /*height: 31px;*/
+    min-height: 150px;
     font-size: 20px;
     padding-left: 10px;
+    font-family:Raleway,SansSerif;
+    width: 90%;
 }
 
 
