@@ -2,7 +2,7 @@
 .col-1{
 	width: 7.142857143%;
     display: inline-block;
-    float: /*left*/;
+    float: left;
 }
 .col-2{
 	width: 14.28571429%;
