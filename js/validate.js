@@ -55,6 +55,35 @@ function getRadioValue(radioChecked) {
     }
 }
 
+/**
+ * This functions checks if the given input has a valid email,
+ * returns true when the email is valid.
+ * @param inputEmail
+ * @returns {boolean}
+ */
+function checkEmailFormat(inputEmail){
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    if(inputEmail.value.match(mailformat)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+/**
+ * This functions checks is the given number is valid
+ * @param inputPhone
+ * @returns {boolean}
+ */
+function checkPhoneFormat(inputPhone){
+    var phoneformat = /^\+\d{10,13}$/;
+    if(inputPhone.value.match(phoneformat)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 
 // Validating input name
 
