@@ -1,17 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    --main-text-color: #E6E2AF; 
-    --secondary-text-color: #A7A37E;
-    --third-text-color: #EFECCA;
-    --fourth-text-color: #046380;
-    --fifth-text-color: #002F2F;
-
-    /* --main-text-color:#2C3E50;
-    --secondary-text-color:#E74C3C;
-    --third-text-color:#ECF0F1;
-    --fourth-text-color:#3498DB;
-    --fifth-text-color:#2980B9; */
 
 }
 
@@ -59,7 +48,7 @@ body {
 }
 
 .navbar > .navbar-left > .navbar-home a {
-    padding: 11px 20px 11px 0;
+    padding: 11px 20px 11px 20px;
     text-decoration: none;
     display: inline-block;
     font-size: 29px;
@@ -78,14 +67,21 @@ body {
     display: inline-block;
 }
 
-.navbar > .navbar-right > .navbar-list > .navbar-item .active a {
+.navbar > .navbar-right > .navbar-list > .navbar-item.active a,
+.navbar-item.home.active a {
     color: #F7F7F7;
     background-color: #A4A4A4;
+    transition: all 0.5s linear;
+}
+
+.navbar-item.home{
+    text-align: center;
 }
 
 .navbar > .navbar-right > .navbar-list > .navbar-item a:hover {
     color: #F7F7F7;
     background-color: #A4A4A4;
+    transition: all 0.5s linear;
 }
 
 .cover-container {
@@ -115,11 +111,11 @@ body {
 .section {
     position: relative;
     overflow: hidden;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .section > .section-content {
-    min-height: 400px;
+    min-height: 600px;
     border-bottom: solid 5px #F2F2F2;
 
 }
@@ -340,6 +336,10 @@ body {
     animation-name: education-item-header;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+.education-header-item:hover{
+    cursor: pointer;
 }
 
 .about-me > .section-content > .personal-img-container {

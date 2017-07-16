@@ -11,7 +11,7 @@
 </head>
 <body>
 	
-	<header class="header">
+	<header class="header" id="cover">
 		
         <div class="cover">
 	        <div class="title-img">
@@ -39,7 +39,7 @@
 		<div class="navbar-left">
 			<ul class="navbar-home">
 				<li class="navbar-item home">
-					<a href="">LR</a>
+					<a href="#cover">LR</a>
 				</li>
 			</ul>
 		</div>
@@ -52,15 +52,15 @@
 				
 				
 				<li class="navbar-item">
-					<a href="">About Me</a>
+					<a href="#about-me">About Me</a>
 				</li>
 
 				<li class="navbar-item">
-					<a href="">Skills</a>
+					<a href="#skills">Skills</a>
 				</li>
 
 				<li class="navbar-item">
-					<a href="">Experience</a>
+					<a href="#experience">Experience</a>
 				</li>
 
 				<!--<li class="navbar-item">-->
@@ -71,11 +71,15 @@
 					<!--<a href="">Why me?</a>-->
 				<!--</li>-->
 				<li class="navbar-item">
-					<a href="">Education</a>
+					<a href="#education">Education</a>
 				</li>
 
 				<li class="navbar-item">
-					<a href="">Contact</a>
+					<a href="#contact">Contact</a>
+				</li>
+
+				<li class="navbar-item">
+					<a href="#ajax">Messages</a>
 				</li>
 
 			</ul>
@@ -94,7 +98,7 @@
 				Job seekers applying for trades or technical positions can use “technical competencies.”
 				This section where you list your skills, knowledge and experience, Bacal says.
 			-->
-		<section class="section about-me">
+		<section class="section about-me" id="about-me">
 			
 			<div class="section-content col-12 offset-col-1">
 				<header class="section-header">
@@ -128,7 +132,7 @@
 				<span class="chapter-number">01</span>
 			</div>
 		</section>
-		<section class="section skills">
+		<section class="section skills" id="skills">
 			
 			<div class="section-content col-12 offset-col-1">
 				<header class="section-header">
@@ -217,7 +221,7 @@
 				<span class="chapter-number">02</span>
 			</div>
 		</section>
-		<section class="section experience">
+		<section class="section experience" id="experience">
 			
 			<div class="section-content col-12 offset-col-1">
 				<header class="section-header">
@@ -347,7 +351,7 @@
 				<span class="chapter-number">03</span>
 			</div>
 		</section>
-		<section class="section education">
+		<section class="section education" id="education">
 			
 			<div class="section-content col-12 offset-col-1">
 					
@@ -407,7 +411,7 @@
 				<span class="chapter-number">04</span>
 			</div>
 		</section>
-		<section class="section contact">
+		<section class="section contact" id="contact">
 
 			<div class="section-content col-12 offset-col-1">
 				<header class="section-header">
@@ -472,7 +476,7 @@
 				<span class="chapter-number">05</span>
 			</div>
 		</section>
-		<section class="section ajax">
+		<section class="section ajax" id="ajax">
 
 			<div class="section-content col-12 offset-col-1">
 				<header class="section-header">
@@ -480,7 +484,7 @@
 				</header>
 
 				<ol class="messages" id="messages">
-					<p>HOla</p>
+					<p>Hello World!</p>
 				</ol>
 			</div>
 
@@ -494,6 +498,7 @@
 
 </body>
 <script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/menu.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/ajax.js"></script>
 <script src="./js/validate.js"></script>
