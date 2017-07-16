@@ -390,7 +390,7 @@ body {
 }
 
 .contact > .section-content > .contact-form-container > .contact-form  .form-group > .error {
-    display: block;
+    display:block;
     color: #bf0606;
     font-size: 14px;
     margin: 5px 0;
@@ -416,9 +416,9 @@ textarea {
     width: 90%;
 }
 
-#inputOther {
-    display:none;
-}
+/*#inputOther {*/
+    /*display:none;*/
+/*}*/
 
 
 
