@@ -303,7 +303,9 @@ body {
 }
 
 .section > .section-content > .education-wrapper > .education-item {
-        width: 100%;
+    width: 100%;
+    transition: all 1s linear;
+
 }
 
 .section > .section-content > .education-wrapper > .education-item.collapsed {
@@ -323,7 +325,9 @@ body {
 
 .section > .section-content > .education-wrapper > .education-item.collapsed > .education-subitems > .education-desc {
     display: none;
+    transition: all 1s linear;
 }
+
 
 /* The animation code */
 @keyframes education-item-header {
@@ -333,9 +337,11 @@ body {
 
 .section > .section-content > .education-wrapper > .education-item.collapsed > .education-header-item {
     transform-origin: bottom left;
-    animation-name: education-item-header;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    transform: rotate(90deg);
+    transition: transform 1s linear;
+    /*animation-name: education-item-header;*/
+    /*animation-duration: 2s;*/
+    /*animation-fill-mode: forwards;*/
 }
 
 .education-header-item:hover{

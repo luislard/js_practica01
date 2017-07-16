@@ -7,5 +7,10 @@ educationTitles.forEach(function(element){
         var theElement = $(this);
         var parent = theElement.parents('.education-wrapper');
         var childrenLi = parent.children('li').toArray();
+        childrenLi.forEach(function(li){
+            li.classList.add('collapsed');
+        });
+        theElement.parent('.education-item').removeClass('collapsed');
+
     });
 });
