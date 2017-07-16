@@ -413,56 +413,56 @@
 					<h2>Contact</h2>
 				</header>
 				<div class="contact-form-container">
-					<form action="" method="" class="contact-form" novalidate>
+					<form action="" method="" class="contact-form" id="contact-form" novalidate>
 						<div class="col-7">
 
 							<div class="form-group">
 								<label for="name" class="label">Name</label>
-								<input type="text" placeholder="e.g. Luis Rosales" name="name" id="name">
-								<span class="error" id="name-error">This field should not be blank.</span>
+								<input type="text" placeholder="e.g. Luis Rosales" name="name" id="name" tabindex="1">
+								<span class="error no-visibility" id="name-error">This field should not be blank.</span>
 							</div>
 							<div class="form-group">
 								<label for="email" class="label">Email</label>
-								<input type="email" placeholder="e.g. example@mail.com" name="email" id="email">
-								<span class="error" id="email-error">This field should not be blank.</span>
+								<input type="email" placeholder="e.g. example@mail.com" name="email" id="email" tabindex="3">
+								<span class="error no-visibility" id="email-error">This field should not be blank.</span>
 							</div>
 						</div>
 						<div class="col-7">
 
 							<div class="form-group">
 								<label for="phone" class="label">Phone</label>
-								<input type="text" placeholder="e.g. +34605123456" name="phone" id="phone">
-								<span class="error" id="phone-error">This field should not be blank.</span>
+								<input type="text" placeholder="e.g. +34605123456" name="phone" id="phone" tabindex="2">
+								<span class="error no-visibility" id="phone-error">This field should not be blank.</span>
 							</div>
 							<div class="form-group">
 								<div class="form-group-title">
 									How do you find me?
 								</div>
 								<div class="form-radios">
-									<input type="radio"  name="how" id="rKeepcoding" class="input-how" value="Keepcoding">
+									<input type="radio"  name="how" id="rKeepcoding" class="input-how" value="Keepcoding" tabindex="4">
 									<label for="rKeepcoding" class="label">Keepcoding</label>
 									<br>
-									<input type="radio"  name="how" id="rYoutube" class="input-how" value="Youtube">
+									<input type="radio"  name="how" id="rYoutube" class="input-how" value="Youtube" tabindex="5">
 									<label for="rYoutube" class="radio-label">Youtube</label>
 									<br>
-									<input type="radio"  name="how" id="rGithub" class="input-how" value="Github">
+									<input type="radio"  name="how" id="rGithub" class="input-how" value="Github" tabindex="6">
 									<label for="rGithub" class="radio-label">Github</label>
 									<br>
-									<input type="radio"  name="how" id="rOther" class="input-how" value="Other">
+									<input type="radio"  name="how" id="rOther" class="input-how" value="Other" tabindex="7">
 									<label for="rOther" class="radio-label">Other</label><br>
-									<input type="text" placeholder="We meet at the conference ..." name="other" id="inputOther">
+									<input type="text" placeholder="We meet at the conference ..." name="other" id="inputOther" class="hidden">
 								</div>
-								<span class="error" id="how-error">This field should not be blank.</span>
+								<span class="error no-visibility" id="how-error">This field should not be blank.</span>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="form-group-title">
-								<p>Write a message.</p>
+								<p>Write a message. (<span class="words-left" id="words-left">150</span> Words remaining)</p>
 							</div>
-							<textarea name="message" id="message"></textarea>
-							<span class="error" id="message-error">This field should not be blank.</span>
+							<textarea name="message" id="message" tabindex="8"></textarea>
+							<span class="error no-visibility" id="message-error">This field should not be blank.</span>
 						</div>
-						<input type="submit" value="Send" id="send">
+						<button type="button" id="send">Send</button>
 					</form>
 				</div>
 			</div>
