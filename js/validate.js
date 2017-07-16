@@ -3,7 +3,20 @@
  */
 
 
+function Message(name, phone, email, how, msg){
+    this.name = name;
+    this.phone = phone;
+    this.email = email;
+    this.how = how;
+    this.msg = msg;
+    this.getMsg = function () {
+        return 'Name: ' + this.name + ', Phone: ' + this.phone + ', Email: '+this.email+ ', How: '+this.how+', Msg: '+this.msg;
+    }
+}
 
+function isTrue(element) {
+    return element === true;
+}
 
 /**
  *
@@ -126,7 +139,6 @@ function hasClass(element, cls) {
 
 
 function checkIfRadioOtherWasSelectedAndRevealTheInput(){
-    console.log('im in');
     var radioChecked = document.querySelector('input[name="how"]:checked');
     if (radioChecked.value === 'Other') {
         inputOther.classList.remove('hidden');
@@ -136,66 +148,66 @@ function checkIfRadioOtherWasSelectedAndRevealTheInput(){
 }
 
 function isFormValid(){
-    var noError = true;
+    var errors = [];
     if (isInputNotBlank(inputName) === false){
         spanName.innerText = 'This field should not be blank.';
         spanName.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else{
         spanName.classList.add('no-visibility');
-        noError = true;
+        errors.push(false);
     }
 
     if (isInputNotBlank(inputPhone) === false){
         spanPhone.innerText = 'This field should not be blank.';
         spanPhone.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else if(checkPhoneFormat(inputPhone) === false) {
         spanPhone.innerText = 'This is not a valid phone number. Hint: +34610123456.';
         spanPhone.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
 
     }else{
 
         spanPhone.classList.add('no-visibility');
-        noError = true;
+        errors.push(false);
     }
 
     if (isInputNotBlank(inputEmail) === false){
         spanEmail.innerText = 'This field should not be blank.';
         spanEmail.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else if (checkEmailFormat(inputEmail) === false){
         spanEmail.innerText = 'This is not a valid email.';
         spanEmail.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else{
 
         spanEmail.classList.add('no-visibility');
-        noError = true;
+        errors.push(false);
     }
 
     if (isInputNotBlank(inputMsg) === false){
         spanMsg.innerText = 'This field should not be blank.';
         spanMsg.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else if (countWords(inputMsg.value) > 150){
         spanMsg.innerText = '150 word max.';
         spanMsg.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else{
         spanMsg.classList.add('no-visibility');
-        noError = true;
+        errors.push(false);
 
     }
 
     if (isRadioNotBlank() === false){
         spanHow.innerText = 'This field should not be blank.';
         spanHow.classList.remove('no-visibility');
-        noError = false;
+        errors.push(true);
     }else{
         spanHow.classList.add('no-visibility');
-        noError = true;
+        errors.push(false);
     }
 
     var wordsLeft = document.getElementById('words-left');
@@ -208,11 +220,14 @@ function isFormValid(){
 
     }
 
-    if (noError) {
-        return true;
-    }else{
+    var errorsInform = errors.find(isTrue);
+
+    if(errorsInform){
         return false;
+    }else{
+        return true;
     }
+
 }
 
 
@@ -241,9 +256,7 @@ form.addEventListener('keyup', function (event) {
 });
 
 var howElements = document.querySelectorAll('input[name="how"]');
-console.log(howElements);
 howElements.forEach(function (element) {
-    console.log('en foreach')
     element.addEventListener('click',function(){
         isFormValid();
         checkIfRadioOtherWasSelectedAndRevealTheInput();
@@ -252,11 +265,19 @@ howElements.forEach(function (element) {
 
 send.addEventListener('click',function (e) {
     if (isFormValid()){
-        alert('valido');
+        var theMessage = new Message(
+            inputName.value,
+            inputPhone.value,
+            inputEmail.value,
+            getRadioValue(),
+            inputMsg.value
+        );
+        createContactMsg(theMessage.getMsg());
         // form.submit();
+        getMessages();
     }else{
         e.preventDefault();
-        alert('no valido');
+        alert('Please check the form.');
 
     }
 });

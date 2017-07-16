@@ -2,3 +2,6 @@
 /possible_images
 # ignore jetbrains folder
 /.idea
+#ignore db
+/db/*
+!/db/.gitKeep

@@ -115,6 +115,7 @@ body {
 .section {
     position: relative;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .section > .section-content {
@@ -416,11 +417,17 @@ textarea {
     width: 90%;
 }
 
-/*#inputOther {*/
-    /*display:none;*/
-/*}*/
+.contact-form{
+    padding-bottom:20px;
+}
 
+.messages {
+    list-style-type: none;
+}
 
+.message-item{
+    padding:10px;
+}
 
 
 
