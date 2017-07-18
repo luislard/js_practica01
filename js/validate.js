@@ -220,7 +220,15 @@ function isFormValid(){
 
     }
 
-    var errorsInform = errors.find(isTrue);
+    var errorCount = 0;
+    for (var i = 0; i < errors.length; i++) {
+        if (errors[i] === true){
+            errorCount++;
+        }
+    }
+
+    // var errorsInform = errors.find(isTrue);
+    var errorsInform = errorCount > 0;
 
     if(errorsInform){
         return false;
@@ -256,12 +264,19 @@ form.addEventListener('keyup', function (event) {
 });
 
 var howElements = document.querySelectorAll('input[name="how"]');
-howElements.forEach(function (element) {
-    element.addEventListener('click',function(){
+
+for (var i = 0; i < howElements.length; i++) {
+    howElements[i].addEventListener('click',function(){
         isFormValid();
         checkIfRadioOtherWasSelectedAndRevealTheInput();
     });
-});
+}
+// howElements.forEach(function (element) {
+//     element.addEventListener('click',function(){
+//         isFormValid();
+//         checkIfRadioOtherWasSelectedAndRevealTheInput();
+//     });
+// });
 
 send.addEventListener('click',function (e) {
     if (isFormValid()){
