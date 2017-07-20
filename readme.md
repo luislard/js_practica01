@@ -21,6 +21,12 @@
 
    http://localhost:8000
 
+5. Para probar el **AJAX** rellene correctamente el formulario y haga click en el botón de enviar. Si todo ha ido bien deberá ver su mensaje en la última sección (**Your Messages**).
+
+6. Las animaciones se pueden ver en la sección **Skills** en los íconos de las tecnologías.
+
+7. Mas animaciones pueden encontrarse en la seccion **Education** haciendo click en los títulos de sección.
+
 **Notas:**
 
 1. Asegúrese de que localhost sea una ruta reconocida en su ordenador. En windows agregar la siguiente linea en el archivo hosts.
