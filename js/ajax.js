@@ -7,19 +7,22 @@ function drawMessages(messages){
     var messageUl = $('#messages');
     messageUl.empty();
 
-    messages.forEach(function (element) {
-        messageUl.append('<li class="message-item"><button class="remove-button" data-id="'+ element.id +'"><i class="fa fa-trash-o" aria-hidden="true"></i></button> '+element.name+'</li>');
-    });
+    if(messages){
+        for (var i=0; i < messages.length; i++  ){
+            messageUl.append('<li class="message-item"><button class="remove-button" data-id="'+ messages[i].id +'"><i class="fa fa-trash-o" aria-hidden="true"></i></button> '+messages[i].name+'</li>');
+        }
 
-    var buttons = $('.remove-button').toArray();
+        var buttons = $('.remove-button').toArray();
 
-    buttons.forEach(function (element) {
-        element.addEventListener('click',function (e) {
-            deleteMessages($(this).data('id'))
-            getMessages();
-        });
+        for (var i=0; i < buttons.length; i++  ){
 
-    });
+        
+            buttons[i].addEventListener('click',function (e) {
+                deleteMessages($(this).data('id'))
+                getMessages();
+            });
+        }
+    }
 
 }
 
@@ -47,14 +50,14 @@ var getMessages = function () {
     XHR.setRequestHeader("Content-Type", "application/json");
 
     XHR.onreadystatechange = function () {
-        if (XHR.readyState === 4) {
+        if (XHR.readyState === 4 && XHR.status !== 404) {
             messages = JSON.parse(XHR.responseText);
             drawMessages(messages);
         } else if (XHR.readyState === 4 && XHR.status === 404) {
-            console.log("Página no encontrada");
+            console.log("There is no messages yet, please fill the contact form to create some messages.");
         }
     }
-
+    
     XHR.send();
 }
 

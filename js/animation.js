@@ -1,6 +1,6 @@
 
 var educationTitles = $('.education-header-item').toArray();
-console.log(educationTitles);
+// console.log(educationTitles);
 
 educationTitles.forEach(function(element){
     element.addEventListener('click',function(e){
