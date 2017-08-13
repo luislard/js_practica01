@@ -5,3 +5,5 @@
 #ignore db
 /db/*
 !/db/.gitKeep
+#ignore mac files
+.DS_Store
